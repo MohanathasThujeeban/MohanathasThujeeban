@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="thuj_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A11"/>
+      <stop offset="50%" stop-color="#0B101D"/>
+      <stop offset="100%" stop-color="#05080E"/>
+    </linearGradient>
+
+    <!-- Radial Cyan Glow -->
+    <radialGradient id="thuj_glow" cx="80%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#070A11" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="thuj_left_glow" cx="15%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#0072F5" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#070A11" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Laser Line Gradient -->
+    <linearGradient id="thuj_laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00F2FE" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#00F2FE" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="thuj_title_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <!-- Pill Gradient -->
+    <linearGradient id="thuj_pill_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Cyber Ring Gradient -->
+    <linearGradient id="thuj_ring_grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="thuj_grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.45"/>
+      <circle cx="30" cy="0" r="1" fill="#38BDF8" fill-opacity="0.3"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="thuj_filter_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="thuj_laser_glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="850" height="320" rx="14" fill="url(#thuj_bg)"/>
+  <rect width="850" height="320" rx="14" fill="url(#thuj_grid)"/>
+  <rect width="850" height="320" rx="14" fill="url(#thuj_glow)"/>
+  <rect width="850" height="320" rx="14" fill="url(#thuj_left_glow)"/>
+
+  <!-- Outer Border with subtle cyan sheen -->
+  <rect width="848" height="318" x="1" y="1" rx="13" fill="none" stroke="#1E293B" stroke-width="1.2"/>
+  
+  <!-- Corner Tech Brackets -->
+  <path d="M 16 32 L 16 16 L 32 16" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 834 32 L 834 16 L 818 16" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 16 288 L 16 304 L 32 304" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 834 288 L 834 304 L 818 304" fill="none" stroke="#00F2FE" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ================= RIGHT CYBER-GEOMETRY ORBITAL SYSTEM ================= -->
+  <g transform="translate(685, 155)">
+    <!-- Ambient Orbital Aura -->
+    <circle cx="0" cy="0" r="115" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="3 6" opacity="0.4"/>
+    
+    <!-- Outer Counter-Rotating Segmented Tech Ring -->
+    <g>
+      <circle cx="0" cy="0" r="95" fill="none" stroke="url(#thuj_ring_grad)" stroke-width="1.4" stroke-dasharray="14 12 40 10 70 20"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="40s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Middle Fast Rotating Dashed Ring -->
+    <g>
+      <circle cx="0" cy="0" r="75" fill="none" stroke="#00F2FE" stroke-width="1.8" stroke-dasharray="6 22 45 15" stroke-opacity="0.75" filter="url(#thuj_filter_glow)"/>
+      <!-- Small orbiting node on middle ring -->
+      <circle cx="75" cy="0" r="3.5" fill="#00F2FE" filter="url(#thuj_filter_glow)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Inner Reverse Ring -->
+    <g>
+      <circle cx="0" cy="0" r="54" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="8 8" opacity="0.6"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="28s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Core Geometric Hexagon / Decagon Base -->
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="#0A1120" stroke="#00F2FE" stroke-width="1.5" stroke-opacity="0.8"/>
+    
+    <!-- Inner Pulsing Core -->
+    <circle cx="0" cy="0" r="14" fill="#00F2FE" fill-opacity="0.2">
+      <animate attributeName="r" values="12;16;12" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.15;0.35;0.15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="7" fill="#00F2FE" filter="url(#thuj_filter_glow)">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Technical Axis Crosshairs -->
+    <line x1="-110" y1="0" x2="-98" y2="0" stroke="#38BDF8" stroke-width="1" opacity="0.6"/>
+    <line x1="98" y1="0" x2="110" y2="0" stroke="#38BDF8" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-110" x2="0" y2="-98" stroke="#38BDF8" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="98" x2="0" y2="110" stroke="#38BDF8" stroke-width="1" opacity="0.6"/>
+
+    <!-- Subtle Tech Code Pill -->
+    <g transform="translate(-55, 96)">
+      <rect width="110" height="18" rx="9" fill="#0B1322" stroke="#1E293B" stroke-width="1"/>
+      <text x="55" y="12.5" fill="#38BDF8" font-size="8.5" text-anchor="middle" class="mono" letter-spacing="1">STATUS: ONLINE</text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT HERO CONTENT ================= -->
+  
+  <!-- Status Badge -->
+  <g transform="translate(52, 44)">
+    <rect width="215" height="24" rx="12" fill="#0B1526" stroke="#1E293B" stroke-width="1"/>
+    <!-- Animated Status Green/Cyan Dot -->
+    <circle cx="15" cy="12" r="4.5" fill="#00F2FE" filter="url(#thuj_filter_glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="12" r="7" fill="none" stroke="#00F2FE" stroke-width="1" opacity="0.4">
+      <animate attributeName="r" values="4.5;9;4.5" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="27" y="15.5" fill="#38BDF8" font-size="10.5" font-weight="600" class="mono" letter-spacing="0.8">OPEN FOR OPPORTUNITIES</text>
+  </g>
+
+  <!-- Top Terminal Coordinate -->
+  <text x="52" y="86" fill="#64748B" font-size="11" class="mono" letter-spacing="1.5">// DEV_ID: THUJEEBAN.M // 0x7F4C</text>
+
+  <!-- Main Name Title -->
+  <text x="50" y="126" fill="url(#thuj_title_grad)" font-size="33" font-weight="800" class="sans" letter-spacing="0.5">
+    MOHANATHAS THUJEEBAN
+  </text>
+
+  <!-- Glowing Laser Underline Accent -->
+  <g transform="translate(52, 137)">
+    <!-- Base muted track -->
+    <line x1="0" y1="0" x2="480" y2="0" stroke="#1E293B" stroke-width="2"/>
+    <!-- Animated Laser Beam sweeping across -->
+    <rect x="0" y="-1.5" width="130" height="3" rx="1.5" fill="url(#thuj_laser)" filter="url(#thuj_laser_glow)">
+      <animate attributeName="x" values="-130; 480; -130" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Target Role & Tagline -->
+  <text x="52" y="166" fill="#38BDF8" font-size="14.5" font-weight="600" class="sans" letter-spacing="0.4">
+    Software Engineer Trainee <tspan fill="#64748B">|</tspan> Full-Stack &amp; Mobile App Developer
+  </text>
+
+  <!-- Bio Sub-tagline -->
+  <text x="52" y="191" fill="#94A3B8" font-size="12.5" class="sans" letter-spacing="0.2">
+    Engineering responsive web applications, secure REST APIs &amp; cross-platform mobile solutions.
+  </text>
+
+  <!-- Location & University Row -->
+  <g transform="translate(52, 212)">
+    <!-- Location Pill -->
+    <g>
+      <rect width="148" height="22" rx="6" fill="#0C1424" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="12" cy="11" r="2.5" fill="#38BDF8"/>
+      <text x="22" y="15" fill="#CBD5E1" font-size="10.5" class="sans">Colombo, Sri Lanka</text>
+    </g>
+    <!-- Education Pill -->
+    <g transform="translate(158, 0)">
+      <rect width="198" height="22" rx="6" fill="#0C1424" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="12" cy="11" r="2.5" fill="#00F2FE"/>
+      <text x="22" y="15" fill="#CBD5E1" font-size="10.5" class="sans">Univ. of Moratuwa (BIT / NDT)</text>
+    </g>
+    <!-- Company Pill -->
+    <g transform="translate(366, 0)">
+      <rect width="170" height="22" rx="6" fill="#0C1424" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="12" cy="11" r="2.5" fill="#38BDF8"/>
+      <text x="22" y="15" fill="#CBD5E1" font-size="10.5" class="sans">Epic Lanka (Backend Dev)</text>
+    </g>
+  </g>
+
+  <!-- Bottom Core Tech Stack Badges -->
+  <g transform="translate(52, 256)">
+    <!-- Label -->
+    <text x="0" y="18" fill="#64748B" font-size="10" font-weight="600" class="mono" letter-spacing="1">CORE_STACK:</text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(85, 2)">
+      <!-- Spring Boot -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="45" y="16" fill="#38BDF8" font-size="11" font-weight="600" class="mono" text-anchor="middle">Spring Boot</text>
+      </g>
+      <!-- React.js -->
+      <g transform="translate(98, 0)">
+        <rect width="78" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="39" y="16" fill="#00F2FE" font-size="11" font-weight="600" class="mono" text-anchor="middle">React.js</text>
+      </g>
+      <!-- Flutter -->
+      <g transform="translate(184, 0)">
+        <rect width="70" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="35" y="16" fill="#38BDF8" font-size="11" font-weight="600" class="mono" text-anchor="middle">Flutter</text>
+      </g>
+      <!-- Python -->
+      <g transform="translate(262, 0)">
+        <rect width="68" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="34" y="16" fill="#E2E8F0" font-size="11" font-weight="600" class="mono" text-anchor="middle">Python</text>
+      </g>
+      <!-- TypeScript -->
+      <g transform="translate(338, 0)">
+        <rect width="88" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="44" y="16" fill="#38BDF8" font-size="11" font-weight="600" class="mono" text-anchor="middle">TypeScript</text>
+      </g>
+      <!-- MongoDB/MySQL -->
+      <g transform="translate(434, 0)">
+        <rect width="86" height="24" rx="5" fill="#0D1627" stroke="#1E293B" stroke-width="1"/>
+        <text x="43" y="16" fill="#00F2FE" font-size="11" font-weight="600" class="mono" text-anchor="middle">SQL/NoSQL</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
