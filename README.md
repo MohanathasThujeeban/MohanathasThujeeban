@@ -163,18 +163,30 @@ Currently engineering enterprise solutions as a **Backend Developer at Epic Lank
 
 ---
 
-### 📊 Real-Time GitHub Metrics
+### 📊 Real-Time GitHub Activity & Metrics
 
 <div align="center">
 
+<!-- REAL-TIME CONTRIBUTION SNAKE IN OBSIDIAN & CYBER CYAN -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohanathasThujeeban/MohanathasThujeeban/output/github-contribution-grid-snake-dark.svg" alt="Real-Time Contribution Grid Snake (Auto-updated via GitHub Actions)" width="100%" />
+</p>
+
+<!-- REAL-TIME STATS & LANGUAGES -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=MohanathasThujeeban&show_icons=true&theme=tokyonight&bg_color=080C14&title_color=00F2FE&text_color=94A3B8&icon_color=38BDF8&border_color=1E293B&hide_border=false" alt="Mohanathas Thujeeban GitHub Stats" height="165" />
   &nbsp;
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MohanathasThujeeban&layout=compact&theme=tokyonight&bg_color=080C14&title_color=00F2FE&text_color=94A3B8&border_color=1E293B&hide_border=false" alt="Top Languages" height="165" />
 </p>
 
+<!-- REAL-TIME STREAK TRACKER -->
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=MohanathasThujeeban&theme=dark&background=080C14&border=1E293B&stroke=00F2FE&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE&sideLabels=94A3B8&dates=64748B" alt="GitHub Streak Tracker" />
+</p>
+
+<!-- REAL-TIME PROFILE DETAILS SUMMARY -->
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MohanathasThujeeban&theme=tokyonight" alt="Real-Time GitHub Activity Summary" width="95%" />
 </p>
 
 </div>
